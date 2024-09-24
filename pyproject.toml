@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "data-lakehouse-10m-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Alan Lanceloth <alan.lanceloth@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.0"
+taipy = "^3.1.1"
+polars = "^1.8.2"
+faker = "^29.0.0"
+python-dotenv = "^1.0.1"
+duckdb = "^1.1.1"
+dbt-core = "^1.8.7"
+dbt-postgres = "^1.8.2"
+psycopg2 = "^2.9.9"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+plotly = "^5.24.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
