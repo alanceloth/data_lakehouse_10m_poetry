@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: public 
+    tables:
+      - name: raw_cadastros
+        description: "Tabela raw com os cadastros originais"
+      - name: raw_pedidos
+        description: "Tabela raw com os pedidos originais"

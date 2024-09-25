@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: bronze_pedidos
+    description: "Tabela de pedidos na camada bronze"
+    columns:
+      - name: id_pedido
+        description: "Número de id_pedido do pedido"
+        tests:
+          - unique:
+              config:
+                severity: warn  # Define que o teste de unicidade retorne um warning
+          - not_null:
+              config:
+                severity: warn  # Define que o teste de not null retorne um warning

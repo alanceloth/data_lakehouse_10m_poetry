@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: silver_cadastros
+    description: "Tabela de cadastros na camada silver"
+    columns:
+      - name: cpf
+        description: "Número de CPF do cliente"
+        tests:
+          - unique:
+              config:
+                severity: error   # Define que o teste falhe a pipeline se houver duplicidade
+          - not_null:
+              config:
+                severity: error   # Define que o teste falhe a pipeline se houver valores nulos
