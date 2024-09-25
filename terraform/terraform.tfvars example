@@ -1,0 +1,11 @@
+# terraform.tfvars
+aws_region        = "REGIAO_AWS" 
+vpc_cidr          = "10.0.0.0/16"
+public_subnet_cidr_a  = "10.0.1.0/24"
+public_subnet_cidr_b  = "10.0.2.0/24"
+private_subnet_cidr_a = "10.0.3.0/24"
+private_subnet_cidr_b = "10.0.4.0/24"
+db_username       = "USER_DB"
+db_password       = "SENHA_DB"
+allowed_ip        = "SEU_IP/32"  
+s3_bucket_name    = "NOME_BUCKET"
